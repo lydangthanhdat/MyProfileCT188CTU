@@ -1,4 +1,6 @@
 :root {
-    --bg-main: orange;
+    --normal-color: #292826;
+    --primary-color: #F9D342;
+    --des-color: #ddc771;
     --text-color: black;
 }

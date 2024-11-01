@@ -21,12 +21,12 @@
             [Ảnh được sử dụng](./src/img)
         2. CSS được viết thuần hoặc dùng các công nghệ
             [CSS thuần](./src/css/)
-            [Boostrap](./vender/boostrap-5)
+            [Boostrap](./vender/boostrap-5/)
             [Font chữ](./vender/fonts)
             [Icons](./vender/icons)
         3. Javascript được viết thuần hoặc dùng các thư viện có sẵn
             [Javascript thuần](./src/js/)
-            [Jquery](./vender/jquery)
+            [Jquery](./vender/jquery/jquery-3.7.1.js)
         4. Dữ liệu người dùng được sử dụng thông qua localStorage hoặc json
             [Dữ liệu json](./src/json/)
 
