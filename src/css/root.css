@@ -1,6 +1,13 @@
 :root {
     --normal-color: #292826;
+    --second-color: #f3dd12;
     --primary-color: #F9D342;
     --des-color: #ddc771;
     --text-color: black;
+    --normal-shadow: 0 0 4px #0007;
+    --small-shadow: 0 0 2px #0006;
+    --big-shadow: 0 0 10px #0007;
+    --danger-color: red;
+    --info-color: rgb(204, 218, 232);
+    --success-color: green;
 }
