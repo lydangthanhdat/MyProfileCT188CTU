@@ -7,13 +7,26 @@ main .container-fluid {
     background: var(--primary-color);
     box-shadow: 0 0 4px var(--normal-color);
     padding: 6px 0;
-    height: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 78px;overflow-y: auto;
+}
+button.sub-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--normal-color);
+    font-size: 24px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 h3.sub-title {
     text-transform: uppercase;
     text-align: center;
     color: var(--normal-color);
     font-size: 24px;
+    width: 100%;
 }
 ul.menu-list {
     display: flex;
@@ -31,10 +44,14 @@ ul.menu-list li.menu-item a {
     color: var(--normal-color);
     text-decoration: none;
     font-weight: 600;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 ul.menu-list li.menu-item:hover {
     background: var(--normal-color);
 }
+
 ul.menu-list li.menu-item:hover a {
     color: var(--primary-color);
 }
@@ -42,11 +59,45 @@ ul.menu-list li.menu-item:hover a {
 
 /* *phần layout bên phải */
 .right-layout {
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
+.title-wrapper-fill {
+    background: var(--normal-color);
+    color: var(--primary-color);
+    padding: 0;
+}
+.title-wrapper-fill .title {
+    /* background: var(--normal-color);
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    padding: 8px 0; */
+    margin: 4px 0;
+}
+
+
 h1.title {
     text-transform: uppercase;
     margin: 16px;
+}
+.title-location {
+    color: var(--normal-color);
+    font-size: 20px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+.title-wrapper-fill .title-location {
+    color: var(--primary-color);
+}
+.title-location i {
+    transition: all linear.1s;
+}
+.title-location:hover {
+    text-decoration: underline;
+    color: var(--warn-color);
+}
+.title-location:hover i {
+    transform: translateX(4px);
 }
 /* phần slide */
 .slide-container {
@@ -57,7 +108,7 @@ h1.title {
 .slide-wrapper {
     width: 100%;
     height: 250px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     overflow: hidden;
     box-shadow: 0 0 4px #0006;
     background: var(--normal-color);
@@ -73,30 +124,37 @@ h1.title {
 /* phần nội dung sản phẩm */
 /* thẻ sản phẩm */
 .products-container {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 }
 .product-wrapper {
-    flex: 0 0 calc(100% / 4);
+    /* flex: 0 0 calc(100% / 4); */
     padding: 8px;
 }
+
 .product-content {
     background: var(--normal-color);
-    color: var(--des-color);
+    color: var(--sub-des-color);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: var(--normal-shadow);
+    cursor: pointer;
+}
+.product-content:hover img {
+    scale: 1.1;
 }
 .product-wrapper .wrapper-img {
     width: 100%;
     height: 200px;
     background: var(--normal-color);
+    overflow: hidden;
 }
 .product-wrapper .wrapper-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: .9;
+    transition: all .1s linear;
 }
 .wrapper-content {
     padding: 0 12px;
@@ -105,6 +163,30 @@ h1.title {
     color: var(--primary-color);
     margin-top: 8px;
 }
+.wrapper-content .content-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+/* phần thẻ sản phẩm chứa địa chỉ */
+.product-content.product-located .wrapper-img {
+    position: relative;
+}
+.product-content.product-located img {
+    transition: all .2s linear;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+}
+.product-content.product-located iframe {
+    position: absolute;
+}
+.product-content.product-located:hover img {
+    /* display: none; */
+    opacity: 0;
+}
+
 /* về phần lượt xem và yêu thích */
 .wrapper-controls {
     display: flex;
@@ -122,4 +204,30 @@ h1.title {
 }
 .wrapper-controls span {
     color: var(--info-color);
+}
+
+/* về mobile */
+@media screen and (max-width: 480px) {
+    h1.title {
+        font-size: 20px;
+    }
+    .title-location {
+        color: var(--normal-color);
+        font-size: 16px;
+        margin-right: 12px;
+        text-decoration: none;
+    }
+    .title-wrapper-fill .title-location {
+        color: var(--primary-color);
+    }
+    .title-location i {
+        transition: all linear.1s;
+    }
+    .title-location:hover {
+        text-decoration: underline;
+        color: var(--warn-color);
+    }
+    .title-location:hover i {
+        transform: translateX(4px);
+    }
 }

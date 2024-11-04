@@ -49,3 +49,13 @@
             - validate form phản hồi []
             - sau khi người dùng gửi phản hồi, gửi mail cảm ơn lại vào mail của người dùng []
                 * nếu thấy gửi mail khó quá thì chỉ cần hiện 1 modal cảm ơn là được []
+        4. Thêm đối tượng yêu thích (thức ăn, nước uống, địa điểm,....)
+            - bấm vào nút thích trên 1 đối tượng thì in đậm biểu tượng icon lên []
+            - sau khi thích thì lưu đối tượng đó vào dữ liệu của người dùng hiện tại []
+            - nếu chưa đăng nhập thì bắt người dùng đăng nhập để được thích []
+            - những đối tượng đã được thích thì nút tim sẽ được hiện đỏ []
+            - khi bỏ thích thì xoá đối tượng khỏi dữ liệu và  đổi biểu tượng nút thích lại []
+4. **Responsive**
+    - Thêm Responsive cho Mobile 
+    - Thêm Responsive cho Tablet
+    - Thêm Responsive cho PC
