@@ -65,6 +65,7 @@ ul.menu-list li.menu-item:hover a {
     background: var(--normal-color);
     color: var(--primary-color);
     padding: 0;
+    margin-top: 18px;
 }
 .title-wrapper-fill .title {
     /* background: var(--normal-color);
@@ -208,6 +209,10 @@ h1.title {
 
 /* về mobile */
 @media screen and (max-width: 480px) {
+    /* *left layout */
+    .left-layout {
+        height: auto;
+    }
     h1.title {
         font-size: 20px;
     }
