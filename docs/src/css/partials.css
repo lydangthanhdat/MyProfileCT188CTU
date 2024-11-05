@@ -40,6 +40,7 @@
 ul.menu {
     display: flex;
     margin: 0;
+    align-items: center;
 }
 ul.menu li {
     list-style-type: none;
@@ -58,6 +59,24 @@ ul.menu li:hover > a {
 ul.menu li > a {
     text-decoration: none;
     color: var(--primary-color);
+}
+/* phần navbar search */
+ul.menu li:has(form):hover {
+    list-style-type: none;
+    background: transparent;
+}
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.search-wrapper input {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 6px;
 }
 
 /* *phần footer */
@@ -152,6 +171,7 @@ ul.footer-list li a {
         /* margin-right: -100%; */
         display: none;
         box-shadow: var(--main-shadow);
+        align-items: normal;
     }
     ul.menu li {
         margin: 8px 0;
