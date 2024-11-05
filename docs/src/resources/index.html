@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">    
+    <link rel="shortcut icon" href="../img/logo-1.jpg" type="image/x-icon">
     <title>Trang chủ</title>
 </head>
 <body>
     <head>
         <nav class="navbar">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img src="../img/logo-1.jpg" alt="">
                 <span class="nav-name">CTF</span>
-            </div>
+            </a>
             <div class="nav-menu">
                 <div class="menu-icon">
                     <i class="bi bi-list"></i>
@@ -22,7 +23,7 @@
                         <form action="#" method="GET" class="navbar-search">
                             <label for="navbar-search" class="search-wrapper">
                                 <i class="bi bi-search"></i>
-                                <input id="navbar-search" type="search" placeholder="Nhập từ khoá">
+                                <input id="navbar-search" type="search" placeholder="Nhập từ khoá" autocomplete="off">
                             </label>
                         </form>
                     </li>
@@ -36,7 +37,10 @@
                         <a href="">Phản hổi</a>
                     </li>
                     <li>
-                        <a href="">Tài khoản</a>
+                        <a href="auth.html">
+                            <i class="bi bi-person-circle"></i>
+                            <span>Tài khoản</span>
+                        </a>
                     </li>
                 </ul>
             </div>

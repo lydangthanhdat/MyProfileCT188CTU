@@ -177,15 +177,18 @@ h1.title {
 .product-content.product-located img {
     transition: all .2s linear;
     position: absolute;
-    z-index: 1;
+    /* z-index: -1; */
     opacity: 1;
 }
 .product-content.product-located iframe {
     position: absolute;
-}
-.product-content.product-located:hover img {
-    /* display: none; */
     opacity: 0;
+    z-index: 1;
+    transition: all .2s linear;
+}
+.product-content.product-located:hover iframe {
+    /* display: none; */
+    opacity: 1;
 }
 
 /* về phần lượt xem và yêu thích */
