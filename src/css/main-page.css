@@ -1,11 +1,11 @@
 main .container-fluid {
-    background: var(--primary-color);
+    background: var(--second-color);
 }
 
 /* *phần layout bên trái */
 .left-layout {
-    background: var(--primary-color);
-    box-shadow: 0 0 4px var(--normal-color);
+    background: var(--second-color);
+    box-shadow: var(--main-shadow);
     padding: 6px 0;
     height: 100vh;
     position: sticky;
@@ -14,7 +14,7 @@ main .container-fluid {
 button.sub-title {
     text-transform: uppercase;
     text-align: center;
-    color: var(--normal-color);
+    color: var(--text-color);
     font-size: 24px;
     width: 100%;
     border: none;
@@ -24,7 +24,7 @@ button.sub-title {
 h3.sub-title {
     text-transform: uppercase;
     text-align: center;
-    color: var(--normal-color);
+    color: var(--text-color);
     font-size: 24px;
     width: 100%;
 }
@@ -41,7 +41,7 @@ ul.menu-list li.menu-item {
 }
 ul.menu-list li.menu-item a {
     font-size: 18px;
-    color: var(--normal-color);
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
     display: block;
@@ -53,7 +53,7 @@ ul.menu-list li.menu-item:hover {
 }
 
 ul.menu-list li.menu-item:hover a {
-    color: var(--primary-color);
+    color: var(--second-color);
 }
 
 
@@ -63,13 +63,13 @@ ul.menu-list li.menu-item:hover a {
 }
 .title-wrapper-fill {
     background: var(--normal-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     padding: 0;
     margin-top: 18px;
 }
 .title-wrapper-fill .title {
     /* background: var(--normal-color);
-    color: var(--primary-color);
+    color: var(--second-color);
     width: 100%;
     text-align: center;
     padding: 8px 0; */
@@ -88,14 +88,14 @@ h1.title {
     text-decoration: none;
 }
 .title-wrapper-fill .title-location {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 .title-location i {
     transition: all linear.1s;
 }
 .title-location:hover {
     text-decoration: underline;
-    color: var(--warn-color);
+    color: var(--text-color);
 }
 .title-location:hover i {
     transform: translateX(4px);
@@ -134,7 +134,7 @@ h1.title {
 }
 
 .product-content {
-    background: var(--normal-color);
+    background: var(--primary-color);
     color: var(--sub-des-color);
     border-radius: 4px;
     overflow: hidden;
@@ -161,7 +161,7 @@ h1.title {
     padding: 0 12px;
 }
 .wrapper-content .content-title {
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-top: 8px;
 }
 .wrapper-content .content-description {
@@ -169,6 +169,7 @@ h1.title {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    color: var(--text-color);
 }
 /* phần thẻ sản phẩm chứa địa chỉ */
 .product-content.product-located .wrapper-img {
@@ -197,7 +198,7 @@ h1.title {
     justify-content: space-between;
     align-items: center;
     padding: 4px 18px;
-    border-top: 1px solid var(--primary-color);
+    border-top: 1px solid var(--text-color);
 }
 .wrapper-controls i {
     font-size: 20px;
@@ -207,7 +208,7 @@ h1.title {
     cursor: pointer;
 }
 .wrapper-controls span {
-    color: var(--info-color);
+    color: var(--normal-color);
 }
 
 /* về mobile */
@@ -226,7 +227,7 @@ h1.title {
         text-decoration: none;
     }
     .title-wrapper-fill .title-location {
-        color: var(--primary-color);
+        color: var(--second-color);
     }
     .title-location i {
         transition: all linear.1s;

@@ -34,6 +34,9 @@
                         <a href="">Thức uống</a>
                     </li>
                     <li>
+                        <a href="">Địa điểm</a>
+                    </li>
+                    <li>
                         <a href="">Phản hổi</a>
                     </li>
                     <li>
@@ -48,12 +51,15 @@
     </head>
     <main>
         <div class="container-fluid d-flex justify-content-center align-items-center">
-            <div class="auth-container auth-login d-flex">
-                <div class="auth-left">
-                    <h1>Bên trái</h1>
+            <div class="auth-container auth-login d-flex align-items-center ">
+                <div class="auth-left d-none d-lg-flex d-sm-none">
+                    <div class="wrapper-thumnail">
+                        <img src="../img/auth-page/login-logo.webp" alt="">
+                    </div>
+                    <h3 class="thumnail-title">login</h3>
                 </div>
                 <div class="auth-right">
-                    <h1 class="form-title">Đăng nhập tài khoản</h1>
+                    <h1 class="form-title">Đăng nhập</h1>
                     <form name="auth-login" action="">
                         <div class="input-wrapper">
                             <input required type="text" name="email" id="login-email" class="form-input">
@@ -63,7 +69,50 @@
                             <input required type="text" name="text" id="login-password" class="form-input">
                             <label for="login-email">Password:</label>
                         </div>
-                        <button class="form-btn" type="submit">Đăng nhập</button>
+                        <button class="form-btn login-btn" type="submit">Đăng nhập</button>
+                        <div class="wrapper-options">
+                            <div class="socials">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-google"></i>
+                            </div>
+                            <span class="register-redirect">Đăng kí</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- *trang đăng kí -->
+            <div class="auth-container auth-register d-flex align-items-center d-none">
+                <div class="auth-left d-none d-lg-flex d-sm-none">
+                    <div class="wrapper-thumnail">
+                        <img src="../img/auth-page/register-logo.webp" alt="">
+                    </div>
+                    <h3 class="thumnail-title">Register</h3>
+                </div>
+                <div class="auth-right">
+                    <h1 class="form-title">Đăng kí</h1>
+                    <form name="auth-register" action="">
+                        <div class="input-wrapper">
+                            <input required type="text" name="email" id="register-email" class="form-input">
+                            <label for="register-email">Email:</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input required type="text" name="text" id="register-password" class="form-input">
+                            <label for="register-password">Password:</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input required type="text" name="text" id="register-re-password" class="form-input">
+                            <label for="register-re-password">Re-password:</label>
+                        </div>
+                        <button class="form-btn register-btn" type="submit">Đăng kí</button>
+                        <div class="wrapper-options">
+                            <div class="socials">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-google"></i>
+                            </div>
+                            <span class="login-redirect">Đăng nhập</span>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -125,6 +174,6 @@
     <!-- partials -->
      <script src="../js/partials.js"></script>
      <!-- main-page -->
-      <script src="../js/main-page.js"></script>
+      <script src="../js/auth.js"></script>
 </body>
 </html>
