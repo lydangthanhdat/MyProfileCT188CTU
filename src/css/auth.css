@@ -6,6 +6,15 @@
     box-shadow: 0 0 4px #0004;
     border-radius: 4px;
 }
+.auth-right {
+    display: flex;
+    flex-direction: column;
+}
+.form-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 .input-wrapper {
     position: relative;
     padding: 2px 4px;
@@ -13,10 +22,10 @@
     align-items: center;
     flex-direction: row-reverse;
     border: 1px solid #000;
-    width: 250px;
     height: 35px;
     border-radius: 2px;
-    margin: 18px;
+    margin: 18px 0;
+    width: 80%;
 }
 .input-wrapper .form-input {
     border: none;
@@ -35,4 +44,6 @@
 .input-wrapper .form-input:valid ~ label {
     transform: translateY(-100%);
     z-index: 1;
+    margin: 0;
+    font-weight: 600;
 }
